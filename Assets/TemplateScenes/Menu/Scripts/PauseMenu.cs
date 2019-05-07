@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     private float m_VolumeRef = 1f;
     private bool m_Paused;
 
+
     void Awake()
     {
         m_MenuToggle = GetComponent <Toggle> ();
@@ -35,32 +36,28 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-    public void OnMenuStatusChange ()
-    {
-    var m_MenuToggle = GetComponent<UnityEngine.UI.Toggle>();
-
-        if (m_MenuToggle.isOn && !m_Paused)
-        {
-            MenuOn();
-        }
-        else if (!m_MenuToggle.isOn && m_Paused)
-        {
-            MenuOff();
-        }
-    }
+    //public void OnMenuStatusChange ()
+    //{
+    //    if (m_MenuToggle.isOn && !m_Paused)
+    //    {
+    //        MenuOn();
+    //    }
+    //    else if (!m_MenuToggle.isOn && m_Paused)
+    //    {
+    //        MenuOff();
+    //    }
+    //}
 
 
 #if !MOBILE_INPUT
-	void Update()
-	{
-		if(Input.GetKeyUp(KeyCode.Escape))
-		{
-            var m_MenuToggle = GetComponent<UnityEngine.UI.Toggle>();
-
-            m_MenuToggle.isOn = !m_MenuToggle.isOn;
-            Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
-		}
-	}
+	//void Update()
+	//{
+	//	if(Input.GetKeyUp(KeyCode.Escape))
+	//	{
+	//	    m_MenuToggle.isOn = !m_MenuToggle.isOn;
+ //           Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
+	//	}
+	//}
 #endif
 
 }
