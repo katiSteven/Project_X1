@@ -187,21 +187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3505410040384124421, guid: 85dca969ce5436c429560c0840ae6125,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 3505410040384124421, guid: 85dca969ce5436c429560c0840ae6125,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 21.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 6379393592036962423, guid: 85dca969ce5436c429560c0840ae6125,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85dca969ce5436c429560c0840ae6125, type: 3}
 --- !u!95 &143512239 stripped
@@ -1337,15 +1322,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3899739885842357057, guid: d622cb0f951768740a838512aa1240ec,
+        type: 3}
+      propertyPath: Ben
+      value: 
+      objectReference: {fileID: 1999740059}
+    - target: {fileID: 3899739885842357057, guid: d622cb0f951768740a838512aa1240ec,
+        type: 3}
+      propertyPath: Kelly
+      value: 
+      objectReference: {fileID: 1293750068}
+    - target: {fileID: 3899739885842357057, guid: d622cb0f951768740a838512aa1240ec,
+        type: 3}
+      propertyPath: Bobby
+      value: 
+      objectReference: {fileID: 1302152281}
+    - target: {fileID: 3899739885842357057, guid: d622cb0f951768740a838512aa1240ec,
+        type: 3}
+      propertyPath: Bob
+      value: 
+      objectReference: {fileID: 1922970566}
     - target: {fileID: 3899739885842357062, guid: d622cb0f951768740a838512aa1240ec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.08
+      value: -6.4406796
       objectReference: {fileID: 0}
     - target: {fileID: 3899739885842357062, guid: d622cb0f951768740a838512aa1240ec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.65
+      value: 0.77725935
       objectReference: {fileID: 0}
     - target: {fileID: 3899739885842357062, guid: d622cb0f951768740a838512aa1240ec,
         type: 3}
@@ -1392,26 +1397,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3899739885842357057, guid: d622cb0f951768740a838512aa1240ec,
-        type: 3}
-      propertyPath: Ben
-      value: 
-      objectReference: {fileID: 1999740059}
-    - target: {fileID: 3899739885842357057, guid: d622cb0f951768740a838512aa1240ec,
-        type: 3}
-      propertyPath: Kelly
-      value: 
-      objectReference: {fileID: 1293750068}
-    - target: {fileID: 3899739885842357057, guid: d622cb0f951768740a838512aa1240ec,
-        type: 3}
-      propertyPath: Bobby
-      value: 
-      objectReference: {fileID: 1302152281}
-    - target: {fileID: 3899739885842357057, guid: d622cb0f951768740a838512aa1240ec,
-        type: 3}
-      propertyPath: Bob
-      value: 
-      objectReference: {fileID: 1922970566}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d622cb0f951768740a838512aa1240ec, type: 3}
 --- !u!1001 &1817213383
