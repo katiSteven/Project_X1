@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour {
 
     public bool SomethingIsHit()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
+        //if (Input.GetMouseButtonDown(0))
+        //{
             //
             RaycastHit2D hit = Physics2D.Raycast(Input.mousePosition, Vector2.zero);
 
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour {
                 //seqM.GetObjectNumber(hitReciever);
                 return true;
             }
-        }
+        //}
         return false;
     }
 

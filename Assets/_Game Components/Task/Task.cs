@@ -25,7 +25,7 @@ public class Task : MonoBehaviour
     }
 
     public void DragTask() {
-        print("task is being dragged");
+        //print("task is being dragged");
         //gather information of the task here
         GameObject childImageObject = transform.GetChild(0).gameObject;
         //call the task interface & send task information

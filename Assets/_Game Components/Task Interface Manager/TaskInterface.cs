@@ -11,6 +11,7 @@ public class TaskInterface : MonoBehaviour
 
     private TimeTableManager timeTableManager;
     private GameManager gameManager;
+    private bool hasDragEnded = false;
 
     void Start()
     {
@@ -26,7 +27,17 @@ public class TaskInterface : MonoBehaviour
     }
 
     private void Update() {
-        
+        // detect collision
+        if (hasDragEnded) {
+            Debug.Log("task interface - inside somethingIsHit()");
+            if (gameManager.SomethingIsHit())
+            {
+                GameObject hitObject = gameManager.GetHitObject();
+                print(hitObject.name);
+                Debug.Log("task interface - inside somethingIsHit()");
+                hasDragEnded = false;
+            }
+        }
     }
 
     public void DragTask(TaskInfo taskInfo,GameObject childImageObject) {
@@ -47,7 +58,9 @@ public class TaskInterface : MonoBehaviour
 
     public void EndDrag() {
         tempTaskObject.SetActive(false);
+        hasDragEnded = true;
+        print("Drag ended");
 
-        Instantiate(TaskPrefab, TimeTableTaskContainer.transform);
+        //Instantiate(TaskPrefab, TimeTableTaskContainer.transform);
     }
 }
